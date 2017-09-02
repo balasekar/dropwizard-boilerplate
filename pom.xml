@@ -3,12 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.product</groupId>
+    <groupId>com.yammer.dropwizard.boilerplate</groupId>
     <artifactId>dropwizard-boilerplate</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <dropwizard.version>0.6.2</dropwizard.version>
+        <postgres.version>9.1.901.jdbc4.1-rc9</postgres.version>
     </properties>
 
     <dependencies>
@@ -16,6 +17,16 @@
             <groupId>com.yammer.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
             <version>${dropwizard.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yammer.dropwizard</groupId>
+            <artifactId>dropwizard-jdbi</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ancoron.postgresql</groupId>
+            <artifactId>org.postgresql</artifactId>
+            <version>${postgres.version}</version>
         </dependency>
     </dependencies>
 </project>
